@@ -34,7 +34,7 @@ $map = new map($cards);
 $sorted = $map->getCards();
 
 $list = $map->getList();
-echo json_encode($list);
+
 ?>
 <table border="1">
   <tr>
