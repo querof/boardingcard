@@ -35,7 +35,10 @@ $sorted = $map->getCards();
 
 $list = $map->getList();
 
+echo "<strong>Human friendly sorted list.</strong>";
+echo "<br><br>";
 ?>
+
 <table border="1">
   <tr>
     <th>
@@ -58,6 +61,9 @@ $list = $map->getList();
   <?php endfor ?>
 </table>
 <?php
+echo "<br><br><br><br>";
+echo "<strong>Sorted list, app internal use.</strong>";
+echo "<br><br>";
 
 echo '<pre>';
 print_r($map->getSorted($map->getStart($sorted['to']),$sorted['from']));
